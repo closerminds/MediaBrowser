@@ -95,6 +95,9 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
     /// Bottom bar for iPhone X
     public var bottomBar = UIView()
 
+    /// Top bar for iPhone X
+    public var topBar = UIView()
+
     /// MediaBrowser has belonged to viewcontroller
     public var hasBelongedToViewController = false
 
@@ -382,6 +385,9 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
         bottomBar.frame = frameForBottomBar
         bottomBar.backgroundColor = toolbarBackgroundColor
 
+        topBar.frame = frameForTopBar
+        topBar.backgroundColor = navigationBarBackgroundColor
+
         // Toolbar Items
         if displayMediaNavigationArrows {
             let arrowPathFormat = "UIBarButtonItemArrow"
@@ -447,6 +453,8 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
             self.toolbar.frame = self.frameForToolbar
 
             self.bottomBar.frame = self.frameForBottomBar
+
+            self.topBar.frame = self.frameForBottomBar
 
             // Perform layout
             self.currentPageIndex = self.pageIndexBeforeRotation
@@ -574,9 +582,11 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
         if hideToolbar {
             toolbar.removeFromSuperview()
             bottomBar.removeFromSuperview()
+            topBar.removeFromSuperview()
         } else {
             view.addSubview(toolbar)
             view.addSubview(bottomBar)
+            view.addSubview(topBar)
         }
 
         // Update nav
@@ -822,6 +832,8 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
         toolbar.frame = frameForToolbar
 
         bottomBar.frame = frameForBottomBar
+
+        topBar.frame = frameForTopBar
 
         // Remember index
         let indexPriorToLayout = currentPageIndex
@@ -1474,6 +1486,14 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
         return CGRect(x: 0, y: view.bounds.size.height - safeAreaBottomInset, width: view.bounds.size.width, height: safeAreaBottomInset)
     }
 
+    var frameForTopBar: CGRect {
+        var safeAreaTopInset = CGFloat(0)
+        if #available(iOS 11, *) {
+            safeAreaTopInset = view.safeAreaInsets.top
+        }
+        return CGRect(x: 0, y: 0, width: view.bounds.size.width, height: safeAreaTopInset)
+    }
+
     func frameForSelectedButton(selectedButton: UIButton, atIndex index: Int) -> CGRect {
         let pageFrame = frameForPageAtIndex(index: index)
         let padding = CGFloat(20.0)
@@ -1966,6 +1986,8 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
 
             bottomBar.frame = frameForBottomBar.offsetBy(dx: 0, dy: animatonOffset)
 
+            topBar.frame = frameForTopBar.offsetBy(dx: 0, dy: animatonOffset)
+
             // Captions
             for page in visiblePages {
                 if let v = page.captionView {
@@ -1984,12 +2006,16 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
 
             self.bottomBar.frame = self.frameForBottomBar
 
+            self.topBar.frame = self.frameForTopBar
+
             if hidden {
                 self.toolbar.frame = self.toolbar.frame.offsetBy(dx: 0, dy: animatonOffset)
                 self.bottomBar.frame = self.bottomBar.frame.offsetBy(dx: 0, dy: animatonOffset)
+                self.topBar.frame = self.topBar.frame.offsetBy(dx: 0, dy: animatonOffset)
             }
             self.toolbar.alpha = hidden ? 0.0 : self.toolbarAlpha
             self.bottomBar.alpha = hidden ? 0.0 : self.toolbarAlpha
+            self.topBar.alpha = hidden ? 0.0 : self.toolbarAlpha
 
             // Captions
             for page in self.visiblePages {
