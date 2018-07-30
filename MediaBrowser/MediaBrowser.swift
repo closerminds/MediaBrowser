@@ -910,7 +910,11 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
         mediaArray.removeAll()
         thumbMedias.removeAll()
 
-        if mediaNum < 1 { return }
+        if mediaNum < 1 {
+            performLayout()
+            view.setNeedsLayout()
+            return
+        }
 
         for _ in 0...(mediaNum - 1) {
             mediaArray.append(nil)
