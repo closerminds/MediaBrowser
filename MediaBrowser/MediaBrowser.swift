@@ -1604,7 +1604,9 @@ public class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheet
                 title = "\(currentPageIndex + 1) \(str) \(numberOfMedias)"
             }
         } else {
-            title = nil
+            if let d = delegate {
+                title = d.title(for: self, at: currentPageIndex)
+            }
         }
 
         // Buttons
