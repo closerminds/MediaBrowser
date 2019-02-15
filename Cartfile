@@ -1,2 +1,3 @@
-github "luispadron/UICircularProgressRing" #~> 1.7.5
-github "rs/SDWebImage" #~> 4.4.4
+#carthage update --no-use-binaries --platform iOS
+#github "luispadron/UICircularProgressRing" #~> 1.7.5
+github "rs/SDWebImage" == 4.4.4
