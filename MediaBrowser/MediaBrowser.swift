@@ -300,7 +300,7 @@ open class MediaBrowser: UIViewController, UIScrollViewDelegate, UIActionSheetDe
         pagingScrollView.delegate = nil
         NotificationCenter.default.removeObserver(self)
         releaseAllUnderlyingPhotos(preserveCurrent: false)
-        SDImageCache.shared().clearMemory() // clear memory
+        SDImageCache.shared.clearMemory() // clear memory
     }
 
     private func releaseAllUnderlyingPhotos(preserveCurrent: Bool) {

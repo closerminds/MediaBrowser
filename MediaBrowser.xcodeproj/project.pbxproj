@@ -353,7 +353,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MediaBrowser/MediaBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
@@ -368,7 +368,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
