@@ -1,0 +1,11 @@
+framework module MediaBrowser {
+  umbrella header "MediaBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MediaBrowser.Swift {
+    header "MediaBrowser-Swift.h"
+    requires objc
+}
