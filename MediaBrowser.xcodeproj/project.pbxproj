@@ -27,6 +27,14 @@
 		19B277C01F63BE5400194941 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B277BE1F63BE5400194941 /* LaunchScreen.xib */; };
 		19E1F62C1F5FD5F8004D3BA8 /* Atoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19E1F62B1F5FD5F8004D3BA8 /* Atoms.mp4 */; };
 		19E1F62E1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1F62D1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift */; };
+		5CC69A8A2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */; };
+		5CC69A8B2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */; };
+		5CC69A8C2340B3A400190AEF /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A872340B3A400190AEF /* SDWebImage.framework */; };
+		5CC69A8D2340B3A400190AEF /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A872340B3A400190AEF /* SDWebImage.framework */; };
+		5CC69A8E2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */; };
+		5CC69A8F2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */; };
+		5CC69A902340B3A400190AEF /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */; };
+		5CC69A912340B3A400190AEF /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */; };
 		F3F1708B16396102681B829F /* Pods_MediaBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60323DB5C06ABAEFAC1E4D90 /* Pods_MediaBrowser.framework */; };
 		FA8F0FEDD718D31C176CDA60 /* Pods_MediaBrowserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EC8A847C92D020DA9B3DB1 /* Pods_MediaBrowserDemo.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +89,10 @@
 		19B277BF1F63BE5400194941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		19E1F62B1F5FD5F8004D3BA8 /* Atoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atoms.mp4; sourceTree = "<group>"; };
 		19E1F62D1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaBrowserDelegate.swift; sourceTree = "<group>"; };
+		5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
+		5CC69A872340B3A400190AEF /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = "<group>"; };
+		5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
 		60323DB5C06ABAEFAC1E4D90 /* Pods_MediaBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CF4EF1E40D3066236FFB74 /* Pods-MediaBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaBrowserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
 		90EC8A847C92D020DA9B3DB1 /* Pods_MediaBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +103,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC69A8E2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */,
 				F3F1708B16396102681B829F /* Pods_MediaBrowser.framework in Frameworks */,
+				5CC69A902340B3A400190AEF /* UICircularProgressRing.framework in Frameworks */,
+				5CC69A8C2340B3A400190AEF /* SDWebImage.framework in Frameworks */,
+				5CC69A8A2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +115,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC69A912340B3A400190AEF /* UICircularProgressRing.framework in Frameworks */,
+				5CC69A8D2340B3A400190AEF /* SDWebImage.framework in Frameworks */,
 				1937C4461F5FE9EA00D8724E /* MediaBrowser.framework in Frameworks */,
+				5CC69A8F2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */,
+				5CC69A8B2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */,
 				FA8F0FEDD718D31C176CDA60 /* Pods_MediaBrowserDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +196,10 @@
 		C20AA726BED7B222DA9A2FE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */,
+				5CC69A872340B3A400190AEF /* SDWebImage.framework */,
+				5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */,
+				5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */,
 				60323DB5C06ABAEFAC1E4D90 /* Pods_MediaBrowser.framework */,
 				90EC8A847C92D020DA9B3DB1 /* Pods_MediaBrowserDemo.framework */,
 			);
@@ -224,7 +248,6 @@
 				1906ABBD1F5F812D0052DC3A /* Frameworks */,
 				1906ABBE1F5F812D0052DC3A /* Resources */,
 				1937C44A1F5FE9EA00D8724E /* Embed Frameworks */,
-				C5C4CCD29F12BFA1442DAA76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,32 +367,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C5C4CCD29F12BFA1442DAA76 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MediaBrowser/MediaBrowser.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MediaBrowser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -570,6 +567,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MediaBrowser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -600,6 +598,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MediaBrowser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -623,6 +622,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MediaBrowserDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -643,6 +643,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MediaBrowserDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
