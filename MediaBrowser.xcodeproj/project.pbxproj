@@ -27,8 +27,8 @@
 		19B277C01F63BE5400194941 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B277BE1F63BE5400194941 /* LaunchScreen.xib */; };
 		19E1F62C1F5FD5F8004D3BA8 /* Atoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19E1F62B1F5FD5F8004D3BA8 /* Atoms.mp4 */; };
 		19E1F62E1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1F62D1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift */; };
-		5CC69A8A2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */; };
-		5CC69A8B2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */; };
+		3FA09CEC237EE4330089C0B5 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */; };
+		3FA09CED237EE4330089C0B5 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */; };
 		5CC69A8C2340B3A400190AEF /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A872340B3A400190AEF /* SDWebImage.framework */; };
 		5CC69A8D2340B3A400190AEF /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A872340B3A400190AEF /* SDWebImage.framework */; };
 		5CC69A8E2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */; };
@@ -89,7 +89,7 @@
 		19B277BF1F63BE5400194941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		19E1F62B1F5FD5F8004D3BA8 /* Atoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atoms.mp4; sourceTree = "<group>"; };
 		19E1F62D1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaBrowserDelegate.swift; sourceTree = "<group>"; };
-		5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
+		3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
 		5CC69A872340B3A400190AEF /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = "<group>"; };
 		5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
@@ -104,10 +104,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC69A8E2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */,
+				3FA09CEC237EE4330089C0B5 /* FLAnimatedImage.framework in Frameworks */,
 				F3F1708B16396102681B829F /* Pods_MediaBrowser.framework in Frameworks */,
 				5CC69A902340B3A400190AEF /* UICircularProgressRing.framework in Frameworks */,
 				5CC69A8C2340B3A400190AEF /* SDWebImage.framework in Frameworks */,
-				5CC69A8A2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 				5CC69A8D2340B3A400190AEF /* SDWebImage.framework in Frameworks */,
 				1937C4461F5FE9EA00D8724E /* MediaBrowser.framework in Frameworks */,
 				5CC69A8F2340B3A400190AEF /* SDWebImageMapKit.framework in Frameworks */,
-				5CC69A8B2340B3A400190AEF /* FLAnimatedImage.framework in Frameworks */,
+				3FA09CED237EE4330089C0B5 /* FLAnimatedImage.framework in Frameworks */,
 				FA8F0FEDD718D31C176CDA60 /* Pods_MediaBrowserDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 		C20AA726BED7B222DA9A2FE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CC69A862340B3A400190AEF /* FLAnimatedImage.framework */,
+				3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */,
 				5CC69A872340B3A400190AEF /* SDWebImage.framework */,
 				5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */,
 				5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */,
