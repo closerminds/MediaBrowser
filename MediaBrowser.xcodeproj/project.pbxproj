@@ -27,6 +27,10 @@
 		19B277C01F63BE5400194941 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B277BE1F63BE5400194941 /* LaunchScreen.xib */; };
 		19E1F62C1F5FD5F8004D3BA8 /* Atoms.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19E1F62B1F5FD5F8004D3BA8 /* Atoms.mp4 */; };
 		19E1F62E1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1F62D1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift */; };
+		3F624549248015C300BE7A52 /* UICircularProgressRing.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CC69A892340B3A400190AEF /* UICircularProgressRing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F62454A248015D100BE7A52 /* SDWebImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CC69A872340B3A400190AEF /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F62454B248015D300BE7A52 /* SDWebImageMapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CC69A882340B3A400190AEF /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F62454C248015D500BE7A52 /* FLAnimatedImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3FA09CEC237EE4330089C0B5 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */; };
 		3FA09CED237EE4330089C0B5 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA09CEB237EE4330089C0B5 /* FLAnimatedImage.framework */; };
 		5CC69A8C2340B3A400190AEF /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC69A872340B3A400190AEF /* SDWebImage.framework */; };
@@ -58,6 +62,19 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F624548248015BC00BE7A52 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F62454C248015D500BE7A52 /* FLAnimatedImage.framework in CopyFiles */,
+				3F62454B248015D300BE7A52 /* SDWebImageMapKit.framework in CopyFiles */,
+				3F62454A248015D100BE7A52 /* SDWebImage.framework in CopyFiles */,
+				3F624549248015C300BE7A52 /* UICircularProgressRing.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -248,6 +265,7 @@
 				1906ABBD1F5F812D0052DC3A /* Frameworks */,
 				1906ABBE1F5F812D0052DC3A /* Resources */,
 				1937C44A1F5FE9EA00D8724E /* Embed Frameworks */,
+				3F624548248015BC00BE7A52 /* CopyFiles */,
 			);
 			buildRules = (
 			);
